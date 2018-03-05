@@ -33,6 +33,6 @@ png(file = "plot3.png", width = 480, height = 480, units = "px")
 plot(dt$posix, dt$Sub_metering_1, type="l", xlab="", ylab="Global_active_power (kilowatts)")	
 points(dt$posix, type = "l", dt$Sub_metering_2, col="red")
 points(dt$posix, type = "l", dt$Sub_metering_3, col="blue")
-legend("topright", col=c("black","blue","red"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
+legend("topright", col=c("black","red","blue"), legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1)
 # Close the image device
 dev.off()
